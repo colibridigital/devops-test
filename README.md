@@ -63,3 +63,25 @@ output:
 - Add logging to the code
 - Implement docstrings and type hinting
 - Add pre-commit hooks to enforce testing and code quality 
+
+# Terraform
+Congrats on building the app!
+
+Now it's time to do the infra. So let's begin by setting up a new Terraform project in the aptly named directory called `terraform`.
+
+You will be using AWS
+
+Requirements:
+* setup a new terraform project. Store the state in the proper location (this is your decision, but state cannot live on your computer).
+
+* setup a VPC. The VPC must span all AZs available for the region of choice and must contain one private and one public subnet per AZ.
+
+
+# Docker
+You have your app and you have your AWS infra. But now you will hand over your app to other developers, who perhaps believe Cloud is what spoils a day at the beach and nothing else. We need to enable them to work locally.
+
+Requirement:
+* setup a docker-compose file that will enable any developer to run your app by simply doing `docker-compose up`.
+* after `docker-compose up`, developer will be able to connect to redis and database on localhost:PORT (where port is the default redis / db port)
+
+note: The services should start in this order: db > redis > your py app
