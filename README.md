@@ -1,4 +1,4 @@
-# NOTE :: this readme contains 3 tests. Step [1] is required, 2 and 3 are optioanal
+# NOTE :: this readme contains 3 tests. Step [1] is required, 2 and 3 are optional
 ---
 
 # [1] News Search
