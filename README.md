@@ -1,4 +1,7 @@
-# News Search
+# NOTE :: this readme contains 3 tests. Step [1] is required, 2 and 3 are optional
+---
+
+# [1] News Search
  
 A command line Python application that allows a user to perform queries on documents stored in a text file. Users can use the AND and OR search operators and search terms to query existing documents. The program returns the indices of documents matching the queries.
 
@@ -64,7 +67,7 @@ output:
 - Implement docstrings and type hinting
 - Add pre-commit hooks to enforce testing and code quality 
 
-# Terraform
+# [2] Terraform (optional)
 Congrats on building the app!
 
 Now it's time to do the infra. So let's begin by setting up a new Terraform project in the aptly named directory called `terraform`.
@@ -77,7 +80,7 @@ Requirements:
 * setup a VPC. The VPC must span all AZs available for the region of choice and must contain one private and one public subnet per AZ.
 
 
-# Docker
+# [3] Docker (optional)
 You have your app and you have your AWS infra. But now you will hand over your app to other developers, who perhaps believe Cloud is what spoils a day at the beach and nothing else. We need to enable them to work locally.
 
 Requirement:
